@@ -190,7 +190,7 @@ export default function touchNavigation(instance) {
             const v = Math.abs(parseInt(vDistancePercent));
             const h = Math.abs(parseInt(hDistancePercent));
 
-            if (v > 29 && mediaImage) {
+            if (v > 15 && mediaImage) {
                 instance.close();
                 return;
             }

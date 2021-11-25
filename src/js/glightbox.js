@@ -1005,7 +1005,7 @@ class GlightboxInit {
             this.events['outClose'] = _.addEvent('click', {
                 onElement: modal,
                 withCallback: (e, target) => {
-                    if (!this.preventOutsideClick && !_.hasClass(document.body, 'glightbox-mobile') && !_.closest(e.target, '.ginner-container')) {
+                    if (!this.preventOutsideClick && !_.closest(e.target, '.ginner-container')) {
                         if (!_.closest(e.target, '.gbtn') && !_.hasClass(e.target, 'gnext') && !_.hasClass(e.target, 'gprev')) {
                             this.close();
                         }
